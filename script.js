@@ -14,8 +14,7 @@ function btnLoginClick() {
 }
 
 function login(userName, passWord) {
-    if (userName == "test" && passWord == "1234")
-    {
+    if (userName == "test" && passWord == "1234") {
         document.getElementById("loginDiv").style.display = "none";
 
         var welcomeMessage = document.createElement("p")
@@ -24,8 +23,8 @@ function login(userName, passWord) {
         var logoutButton = document.createElement("button")
         logoutButton.innerHTML = "Logga ut"
         logoutButton.onclick = logout;
-        
-        
+
+
         document.getElementById("content").innerHTML = "";
         document.getElementById("content").appendChild(welcomeMessage);
         document.getElementById("content").appendChild(logoutButton);
@@ -42,14 +41,14 @@ function login(userName, passWord) {
         var retryButton = document.createElement("button")
         retryButton.innerHTML = "Försök igen"
         retryButton.onclick = retry;
-        
+
         document.getElementById("content").appendChild(errorMessage);
         document.getElementById("content").appendChild(retryButton);
     }
 }
 
 
-function logout () {
+function logout() {
     console.log("Logout")
     localStorage.removeItem("Name");
     location.reload();
@@ -69,10 +68,6 @@ function retry() {
 
 
 
-   
-       
-    
-    
 
 
 
@@ -80,7 +75,10 @@ function retry() {
 
 
 
-   
-       
-    
-    
+
+
+
+
+
+
+
