@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #welcomeDiv,
+        #errorDiv {
+            display: none;
+        }
+
+        fieldset {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="loginDiv">
+        <p>Skriv ditt användarnamn och lösenord</p>
+
+        <form name="login">
+            <div class="login">
+                <input type="text" placeholder="Användarnamn" id="userid"> <br>
+                <input type="password" placeholder="Lösenord" id="pswrd"> <br>
+                <input type="button" onclick="btnLoginClick()" value="Logga In"><br>
+            </div>
+        </form>
+
+    </div>
+
+
+    <div id='content'></div>
+
+
+    <!-- <div id="welcomeDiv">
+        Du är inloggad
+        <fieldset>
+            <legend>Local Storage</legend>
+            <div id="lsOutput"></div>
+        </fieldset>
+        <button id="logOutButton">Logout</button>
+
+        <br>
+    </div>
+
+    <div id="errorDiv">
+
+    </div> -->
+
+
+    <script src="./script.js"></script>
+
+
+</body>
+
+</html>
+</body>
+
+</html>
