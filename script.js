@@ -1,4 +1,4 @@
-var storageName = localStorage.getItem("Name");
+var storageName = localStorage.getItem("Name"); 
 var storagePassword = localStorage.getItem("Password");
 
 if (storageName && storagePassword) {
@@ -33,12 +33,12 @@ function login(userName, passWord) {
         localStorage.setItem("Password", passWord);
     }
     else {
-        document.getElementById("loginDiv").style.display = "none";
+        document.getElementById("loginDiv").style.display = "none"; // för att gömma LoginDiv 
 
         var errorMessage = document.createElement("p")
-        errorMessage.innerHTML = "Fel namn eller lösenord!"
+        errorMessage.innerHTML = "Fel namn eller lösenord!" // Meddelandet som visas när användaren skriver fel
 
-        var retryButton = document.createElement("button")
+        var retryButton = document.createElement("button") // Knapp för att försöka igen ifall man skrivit fel
         retryButton.innerHTML = "Försök igen"
         retryButton.onclick = retry;
 
