@@ -5,7 +5,7 @@ if (storageName && storagePassword) {
     login(storageName, storagePassword)
 }
 
-function btnLoginClick() {
+function btnLoginClick() {  // Logga in knappen
 
     let userName = document.getElementById("userid").value;
     let passWord = document.getElementById("pswrd").value;
@@ -15,12 +15,12 @@ function btnLoginClick() {
 
 function login(userName, passWord) {
     if (userName == "test" && passWord == "1234") {
-        document.getElementById("loginDiv").style.display = "none";
+        document.getElementById("loginDiv").style.display = "none"; // för att komma åt loginDiv när man skriver rätt
 
         var welcomeMessage = document.createElement("p")
-        welcomeMessage.innerHTML = "Välkommen!"
+        welcomeMessage.innerHTML = "Välkommen!" // Meddelandet som visas när man loggar in
 
-        var logoutButton = document.createElement("button")
+        var logoutButton = document.createElement("button") // logga ut knappen
         logoutButton.innerHTML = "Logga ut"
         logoutButton.onclick = logout;
 
@@ -50,12 +50,12 @@ function login(userName, passWord) {
 
 function logout() {
     console.log("Logout")
-    localStorage.removeItem("Name");
-    location.reload();
-    document.getElementById("loginDiv").style.display = "block";
+    localStorage.removeItem("Name"); // för att töma localStorage
+    location.reload(); // För att börja om
+    document.getElementById("loginDiv").style.display = "block"; // för att visa inloggningssidan sen
 }
 
-function retry() {
+function retry() { //Försök igen funktion
     document.getElementById("content").innerHTML = "";
     document.getElementById("loginDiv").style.display = "block";
 }
